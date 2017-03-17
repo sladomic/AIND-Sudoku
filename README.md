@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The constraint is, that a number can exist only once in a unit. Since the twins already contain 2 certain values and these can only exist in these boxes, we can remove them from the other possible boxes in the unit.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We add two additional units (the two diagonal lines) to the unit_list. The algorithms stay the same, because they are programmed to use the units as constraints.
 
 ### Install
 
@@ -24,7 +24,7 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 
 ### Code
 
-* `solution.py` - You'll fill this in as part of your solution.
+* `solutions.py` - You'll fill this in as part of your solution.
 * `solution_test.py` - Do not modify this. You can test your solution by running `python solution_test.py`.
 * `PySudoku.py` - Do not modify this. This is code for visualizing your solution.
 * `visualize.py` - Do not modify this. This is code for visualizing your solution.
@@ -33,3 +33,6 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 
 To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in solution.py
 
+### Data
+
+The data consists of a text file of diagonal sudokus for you to solve.
